@@ -1,0 +1,78 @@
+Dell@lol MINGW64 ~/Desktop/aditi
+$ git clone https://github.com/Aditi810/Test070.git
+Cloning into 'Test070'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+Dell@lol MINGW64 ~/Desktop/aditi
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+Dell@lol MINGW64 ~/Desktop/aditi
+$ cd Test070
+
+Dell@lol MINGW64 ~/Desktop/aditi/Test070 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Test1
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+
+Dell@lol MINGW64 ~/Desktop/aditi/Test070 (main)
+$ git add .
+
+Dell@lol MINGW64 ~/Desktop/aditi/Test070 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   Test1
+
+
+Dell@lol MINGW64 ~/Desktop/aditi/Test070 (main)
+$ git commit -m "modified the file"
+[main 900d0ac] modified the file
+ 1 file changed, 1 insertion(+)
+
+Dell@lol MINGW64 ~/Desktop/aditi/Test070 (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Dell@lol MINGW64 ~/Desktop/aditi/Test070 (main)
+$ git push https://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@github.com/Aditi810/Test070.git
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 298 bytes | 298.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Aditi810/Test070.git
+   c9acfd9..900d0ac  main -> main
+
+Dell@lol MINGW64 ~/Desktop/aditi/Test070 (main)
+$ git pull https://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@github.com/Aditi810/Test070.git
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 675 bytes | 6.00 KiB/s, done.
+From https://github.com/Aditi810/Test070
+ * branch            HEAD       -> FETCH_HEAD
+Updating 900d0ac..fb13a1a
+Fast-forward
+ Test1 | 1 +
+ 1 file changed, 1 insertion(+)
